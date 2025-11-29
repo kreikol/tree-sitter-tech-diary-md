@@ -2,10 +2,10 @@ prefix=@CMAKE_INSTALL_PREFIX@
 libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
 includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
 
-Name: tree-sitter-markdown-inline
+Name: tree-sitter-tech-diary-md-blocks
 Description: @PROJECT_DESCRIPTION@
 URL: @PROJECT_HOMEPAGE_URL@
 Version: @PROJECT_VERSION@
 Requires: @TS_REQUIRES@
-Libs: -L${libdir} -ltree-sitter-markdown-inline
+Libs: -L${libdir} -ltree-sitter-tech-diary-md-blocks
 Cflags: -I${includedir}

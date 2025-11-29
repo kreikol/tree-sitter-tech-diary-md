@@ -11,7 +11,7 @@ const PRECEDENCE_LEVEL_LINK = common.PRECEDENCE_LEVEL_LINK;
 const PUNCTUATION_CHARACTERS_REGEX = '!-/:-@\\[-`\\{-~';
 
 module.exports = grammar({
-    name: 'markdown',
+    name: 'tech_diary_md_blocks',
 
     rules: {
         document: $ => seq(

@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(tree-sitter-markdown
-        VERSION "0.5.1"
-        DESCRIPTION "Markdown grammar for tree-sitter"
-        HOMEPAGE_URL "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+project(tree-sitter-tech-diary
+        VERSION "0.1.0"
+        DESCRIPTION "Tech Diary Markdown grammar for tree-sitter"
+        HOMEPAGE_URL "https://github.com/kreikol/tree-sitter-tech-diary-md"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
@@ -60,6 +60,6 @@ macro(add_parser name)
             LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 endmacro()
 
-add_subdirectory(tree-sitter-markdown tree-sitter-markdown)
+add_subdirectory(tree-sitter-tech-diary-md-blocks tree-sitter-tech-diary-md-blocks)
 
-add_subdirectory(tree-sitter-markdown-inline tree-sitter-markdown-inline)
+add_subdirectory(tree-sitter-tech-diary-md-inline tree-sitter-tech-diary-md-inline)

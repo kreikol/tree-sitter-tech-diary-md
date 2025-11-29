@@ -1,25 +1,25 @@
 [package]
-name = "tree-sitter-md"
-description = "Markdown grammar for tree-sitter"
-version = "0.5.1"
-authors = ["MDeiml"]
+name = "tree-sitter-tech-diary"
+description = "Tech Diary Markdown grammar for tree-sitter"
+version = "0.1.0"
+authors = ["Miriam Ruiz"]
 license = "MIT"
 readme = "README.md"
-keywords = ["incremental", "parsing", "tree-sitter", "markdown"]
+keywords = ["incremental", "parsing", "tree-sitter", "tech-diary"]
 categories = ["parsing", "text-editors"]
-repository = "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+repository = "https://github.com/kreikol/tree-sitter-tech-diary-md"
 edition = "2021"
 autoexamples = false
 
 build = "bindings/rust/build.rs"
 include = [
   "bindings/rust/*",
-  "tree-sitter-markdown/src/*",
-  "tree-sitter-markdown-inline/src/*",
-  "tree-sitter-markdown/grammar.js",
-  "tree-sitter-markdown-inline/grammar.js",
-  "tree-sitter-markdown/queries/*",
-  "tree-sitter-markdown-inline/queries/*",
+  "tree-sitter-tech-diary-md-blocks/src/*",
+  "tree-sitter-tech-diary-md-inline/src/*",
+  "tree-sitter-tech-diary-md-blocks/grammar.js",
+  "tree-sitter-tech-diary-md-inline/grammar.js",
+  "tree-sitter-tech-diary-md-blocks/queries/*",
+  "tree-sitter-tech-diary-md-inline/queries/*",
   "common/grammar.js",
   "common/html_entities.json",
 ]

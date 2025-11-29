@@ -55,7 +55,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        parser: [tree-sitter-markdown, tree-sitter-markdown-inline]
+        parser: [tree-sitter-tech-diary-md-blocks, tree-sitter-tech-diary-md-inline]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

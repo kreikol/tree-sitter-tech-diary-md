@@ -1,7 +1,7 @@
-set(PROJECT_DESCRIPTION "Markdown block grammar for tree-sitter")
-set(TS_REQUIRES tree-sitter-markdown-inline)
+set(PROJECT_DESCRIPTION "Tech Diary Markdown block grammar for tree-sitter")
+set(TS_REQUIRES tree-sitter-tech-diary-md-inline)
 
-add_parser(markdown)
+add_parser(tech_diary_md_blocks)
 
 add_custom_target(test "${TREE_SITTER_CLI}" test
                   WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"

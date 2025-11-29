@@ -1,9 +1,9 @@
 package tree_sitter_markdown
 
-// #cgo CPPFLAGS: -I../../tree-sitter-markdown-inline
+// #cgo CPPFLAGS: -I../../tree-sitter-tech-diary-md-inline
 // #cgo CFLAGS: -std=c11 -fPIC
-// #include "../../tree-sitter-markdown-inline/src/parser.c"
-// #include "../../tree-sitter-markdown-inline/src/scanner.c"
+// #include "../../tree-sitter-tech-diary-md-inline/src/parser.c"
+// #include "../../tree-sitter-tech-diary-md-inline/src/scanner.c"
 import "C"
 
 import "unsafe"

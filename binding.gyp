@@ -6,14 +6,14 @@
         "<!(node -p \"require('node-addon-api').targets\"):node_addon_api_except",
       ],
       "include_dirs": [
-        "tree-sitter-markdown/src",
+        "tree-sitter-tech-diary-md-blocks/src",
       ],
       "sources": [
         "bindings/node/binding.cc",
-        "tree-sitter-markdown/src/parser.c",
-        "tree-sitter-markdown/src/scanner.c",
-        "tree-sitter-markdown-inline/src/parser.c",
-        "tree-sitter-markdown-inline/src/scanner.c",
+        "tree-sitter-tech-diary-md-blocks/src/parser.c",
+        "tree-sitter-tech-diary-md-blocks/src/scanner.c",
+        "tree-sitter-tech-diary-md-inline/src/parser.c",
+        "tree-sitter-tech-diary-md-inline/src/scanner.c",
       ],
       "cflags_c": [
         "-std=c11",

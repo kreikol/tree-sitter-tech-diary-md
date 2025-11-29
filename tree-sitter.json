@@ -1,39 +1,40 @@
 {
   "metadata": {
-    "version": "0.5.1",
+    "version": "0.1.0",
     "license": "MIT",
     "authors": [
       {
-        "name": "MDeiml"
+        "name": "Miriam Ruiz"
       }
     ],
-    "description": "Markdown grammar for tree-sitter",
+    "description": "Tech Diary Markdown grammar for tree-sitter",
     "links": {
-      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+      "repository": "https://github.com/kreikol/tree-sitter-tech-diary-md"
     }
   },
   "grammars": [
     {
-      "name": "markdown",
-      "scope": "text.markdown",
-      "path": "tree-sitter-markdown",
+      "name": "tech_diary_md_blocks",
+      "camelcase": "TechDiaryMarkdownBlocks",
+      "scope": "text.tech_diary_md_blocks",
+      "path": "tree-sitter-tech-diary-md",
       "injection-regex": "^(markdown|md)$",
       "file-types": [
-        "md"
+        "md", "tech_diary"
       ],
-      "highlights": "tree-sitter-markdown/queries/highlights.scm",
-      "injections": "tree-sitter-markdown/queries/injections.scm",
+      "highlights": "tree-sitter-tech-diary-md-blocks/queries/highlights.scm",
+      "injections": "tree-sitter-tech-diary-md-blocks/queries/injections.scm",
       "external-files": [
         "common/common.js"
       ]
     },
     {
-      "name": "markdown_inline",
-      "camelcase": "MarkdownInline",
-      "scope": "text.markdown_inline",
-      "path": "tree-sitter-markdown-inline",
-      "highlights": "tree-sitter-markdown-inline/queries/highlights.scm",
-      "injections": "tree-sitter-markdown-inline/queries/injections.scm",
+      "name": "tech_diary_md_inline",
+      "camelcase": "TechDiaryMarkdownInline",
+      "scope": "text.tech_diary_md_inline",
+      "path": "tree-sitter-tech-diary-md-inline",
+      "highlights": "tree-sitter-tech-diary-md-inline/queries/highlights.scm",
+      "injections": "tree-sitter-tech-diary-md-inline/queries/injections.scm",
       "external-files": [
         "common/common.js"
       ]
